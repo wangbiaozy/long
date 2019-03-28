@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北京移动</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="js/less-1.7.0.min.js"></script> -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+    <script>
+        imgLoader([
+            'images/bg_1.png',
+            'images/cj_btn.png',
+            'images/cj_btn_1.png',
+            'images/close.png',
+            'images/code-pic.png',
+            'images/codeBg.png',
+            'images/erweima.png',
+            'images/fail_mess_box.png',
+            'images/fri-btn-1.png',
+            'images/guang.png',
+            'images/html_bg.png',
+            'images/l_1.png',
+            'images/l_2.png',
+            'images/l_3.png',
+            'images/l_4.png',
+            'images/l_5.png',
+            'images/l_6.png',
+            'images/l_7.png',
+            'images/l_8.png',
+            'images/l_9.png',
+            'images/ljts_1.png',
+            'images/ljts_btn.png',
+            'images/ljts.png',
+            'images/make-btn.png',
+            'images/qd_btn_green.png',
+            'images/qd_red.png',
+            'images/qqt_logo.png',
+            'images/r_1.png',
+            'images/r_2.png',
+            'images/r_3.png',
+            'images/r_4.png',
+            'images/r_5.png',
+            'images/r_6.png',
+            'images/r_7.png',
+            'images/r_8.png',
+            'images/r_9.png',
+            'images/record_box.png',
+            'images/record_look_btn.png',
+            'images/rule_box.png',
+            'images/rule_btn.png',
+            'images/share-message.png',
+            'images/sj_icon.png',
+            'images/start_btn.png',
+            'images/tofriend_bg.png',
+            'images/tofriend_btn.png',
+            'images/user_photo_default.png',
+            'images/yh_1.png',
+            'images/yh_2.png',
+            'images/ywtc_bg_1.png',
+            'images/ywtc_bg_2.png',
+            'images/ywtc_bg_3.png',
+            'images/ywtc_bg_4.png',
+            'images/ywtc_bg_5.png',
+            'images/ywtc_btn_1.png',
+            'images/ywtc_btn_2.png',
+            'images/ywtc_btn_3.png',
+            'images/ywtc_btn_4.png',
+            'images/yzm_btn.png'
+        ], function (percentage) {
+            var percentT = percentage * 100;
+            $('#loader_info').html('Loading ' + (parseInt(percentT)) + '%');
+            $('#loader_progress')[0].style.width = percentT + '%';
+            $('#can-code').hide();
+            if (percentage == 1) {
+                var entry = localStorage.getItem('friend');
+                var succ = localStorage.getItem('success');
+                $('#loader').remove();
+                $('#can-code').show();
+                if(entry){
+                    $('.make').show();
+                    entry= '';
+                    if(!succ){
+                        $('#fail').show().siblings().hide();
+                    }
+                }else{
+                    $('.con').show();
+                    entry= '';
+                }
+                localStorage.setItem('friend','');
+                localStorage.setItem('success','');
+            }
+        });
+    </script>
+</head>
+<body>
+    <!--loading-->
+    <section id="loader" class="loader">
+        <div>
+            <!-- <img src="./images/girl.gif" alt=""> -->
+        </div>
+        <div id="loader_info" class="loader_info"></div>
+        <div>
+            <div id="loader_progress" class="loader_progress"></div>
+        </div>
+    </section>
+
+    <!-- 首页 -->
+    <section id="con" class="con">
+        <div class="yh yh-1"></div>
+        <div class="yh yh-2"></div>
+        <main></main>
+        <a href="javascript:void(0)" class="rule-btn rb-0"></a>
+        <a href="javascript:void(0)" class="start-btn" id="start-btn"></a>
+
+    </section>
+    
+    <!-- 活动规则 -->
+    <section class="rule" id="rule">
+        <div>
+            <ul>
+                <li>
+                    <h3>一 活动时间：</h3>
+                    <p>即日起——2月22日</p>
+                    <h3>二 活动介绍：</h3>
+                    <p style="text-indent: 2em;">活动期间，用户通过北京移动微信公众号，可参与“元宵佳节-花灯大赏”活动。每个用户通过活动可获得半个专属花灯，用户可邀请好友与自己拼花灯。好友通过邀请页面参与匹配，双方图案相同即为成功。成功后，双方均可获得1次抽奖机会（每个用户仅在第一次成功匹配后可获得1次抽奖机会）。未匹配成功的用户无法获得抽奖机会。<br>北京移动用户抽中流量奖品后，自动充入关注绑定账户。<br>非北京移动用户抽中流量奖品后可以转赠给北京移动手机号码。</p>
+                    <h3>三 奖品规则：</h3>
+                    <p>活动奖品包含：100MB、200MB、500MB、1GB、10GB全国流量及部分免费业务体验资格、优惠业务办理资格。</p>
+                    <p>（一）流量奖品</p>
+                    <p>1.流量档位包括100MB、200MB、500MB、1GB、10GB全国流量；</p>
+                    <p>2.奖品将于领取后15日内，自动充入用户的微信关注绑定手机号，流量自充入日起生效，有效期至本月月末；</p>
+                    <p>3.活动赠送套外国内流量，优先级低于主套餐、可选包、短促包、定向流量包等，赠送流量无法共享，不可结转；</p>
+                    <p>4.处于保留期、保号期、挂失、申停、欠停、转品牌过渡期的手机号；物联网卡、4G超级日租卡套餐、神州行开心听、语音套餐卡、神州行B标准资费基本策划等特殊资费用户无法领取赠送流量；</p>
+                    <p>5.赠送流量每月仅可领取100次，超出上限不可领取。</p>
+                    <p>（二）其它奖品</p>
+                    <p>规则详见各奖品办理页面</p>
+                    <p>温馨提示：活动将于2月22日结束，请您务必于活动结束前完成领奖，逾期视为自动放弃奖品。</p>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript: void(0)" class="gohome"></a>
+    </section>
+
+    <!-- 发送好友弹窗 -->
+    <section class="tofriend" id="tofriend">
+        <div>
+            <img class="my-hd" src="" alt="">
+            <p class="hd-name"></p>
+        </div>
+        <div>
+            <p>恭喜您获得了</p>
+            <p><span class="hd-name"></span></p>
+            <p>现在发送给好友拼花灯</p>
+            <p>首次完成100分匹配时</p>
+            <p>有机会获得<span>10GB流量哦~</span></p>
+            <a href="javascript:void(0)" class="share-btn make-btn" id="share-btn"></a>
+        </div>
+        <a href="javascript:void(0)" class="close"></a>
+    </section>
+
+    <!-- 分享提示浮层 -->
+    <!-- <section class="share-message" id="share-message"></section> -->
+
+    <!-- 制作海报页 -->
+    <section class="make" id="make">
+        <a href="javascript: void(0)" class="make-btn"></a>
+        <a href="javascript: void(0)" class="rule-btn rb-1"></a>
+        <div>
+            <ul class="user-photo">
+                <li>
+                    <img class="my-photo" src="./images/default.jpg" alt="">
+                    <p class="my-name">昵称最多八个字吧</p>
+                </li>
+                <li>
+                    <img src="./images/user_photo_default.png" alt="">
+                    <p class="friend-name"></p>
+                </li>
+            </ul>
+
+            <div class="pdpic-box" id="pdpic-box">
+                <img class="my-hd" src="" alt="">
+                <img class="suc-friend" src="" alt="">
+            </div>
+
+            <div class="pdmess-box" id="pdmess-box">
+                <div></div>
+                <div id="bingo">
+                    <p>恭喜您与好友成功拼成<span class="hd-name"></span>！</p>
+                    <a id="cj-btn" href="javascript:void(0)"></a>
+                </div>
+                <div id="fail" class="make-btn">
+                   <!--  <p></p>
+                    <p>寻找有缘人，一起抽<span>10GB</span>!</p> -->
+                </div>
+            </div>
+
+            <div class="record-box">
+                <p>你还没有开始拼花灯哦<br>配对成功还可以抽奖呢</p>
+                <ul id="record-list">
+                    <li>
+                        <img src="./images/user_photo_default.png" alt="">
+                        <p><span>昵称最多八个字吧</span><span></span></p>
+                        <p></p>
+                        <a href="javascript:void(0)"></a>
+                        <i></i>
+                        <i></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 测试按钮 -->
+        <a style="position:absolute;z-index:300;top:.5rem;" href="#" class="test2">有自己的灯</a>
+        <a style="position:absolute;z-index:300;top:1rem;" href="#" class="test3">拼灯成功</a>
+        <a style="position:absolute;z-index:300;top:1.5rem;" href="#" class="test4">未绑定手机号</a>
+        <a style="position:absolute;z-index:300;top:2rem;" href="#" class="test5">异网用户</a>
+        <a style="position:absolute;z-index:300;top:2.5rem;" href="#" class="test6">异网用户奖品是兑换码</a>
+
+    </section>
+
+    <!-- 专属二维码弹窗 -->
+    <section class="can-code" id="can-code">
+        <div></div>
+        <div id="pic" class="pic">
+            <img src="./images/codeBg.png" alt="" class="bg">
+            <div class="user-mess">
+                <!-- <div>
+                    <img class="my-photo" src="./images/default.jpg" alt="">
+                </div> -->
+                <p><span class="my-name">最最多最多多多多多多个字</span>邀您拼花灯</p>
+            </div>
+            <div class="box">
+                <img class="my-hd" src="" alt="">
+                <p class="hd-name"></p>
+            </div>
+            <div class="text">
+                <p>亲爱的朋友，元宵节快乐！</p>
+                <p>快来扫码和我拼花灯</p>
+                <p>首次100分匹配可以抽<span>10GB</span>哦！</p>
+            </div>
+            <div id="qrcode" class="code"></div>
+        </div>
+        <p>长按保存图片，发送给好友拼花灯</p>
+        <a class="close" href="javascript:void(0)"></a>
+    </section>
+
+    <!-- 查看拼花灯成功&不成功页 -->
+    <section class="look-result" id="look-result">
+        <a class="rule-btn rb-2" href="javascript:void(0)"></a>
+        <ul class="user">
+            <li>
+                <div>
+                    <img  class="my-photo" src="./images/default.jpg" alt="">
+                </div>
+                <p>昵称最多八个字吧</p>
+            </li>
+            <li>
+                <div>
+                    <img class="look-fri-photo" src="./images/user_photo_default.png" alt="">
+                </div>
+                <p>昵称最多八个字吧</p>
+            </li>
+        </ul>
+        <div class="box">
+            <span></span>
+            <img class="look-my-hd" src="" alt="">
+            <img class="look-friend" src="" alt="">
+        </div>
+        <div class="text success">
+            <p>缘分值：<span class="look-percent"></span></p>
+            <p class="look-desc"></p>
+        </div>
+        <div class="text fail">
+            <p>你们这次没有拼成功哦~</p>
+            <p>别灰心，加把劲，一定能有好友与你是同一种花灯呦</p>
+        </div>
+        <a id="golook" href="javascript:void(0)"></a>
+    </section>
+
+    <!-- 未关注公众号引导页 -->
+    <section class="yindao" id="yindao">
+        <p>亲爱的用户</p>
+        <p>元宵节拼花灯活动</p>
+        <p>联通、电信的小伙伴们统统可以参加啦！</p>
+        <p>扫码关注微信参加活动</p>
+        <div>
+            <img src="./images/erweima.png" alt="">
+            <p>长按图片—识别图中二维码—关注公众号</p>
+        </div>
+    </section>
+
+    <!-- 中奖弹窗 -->
+    <section class="ywtc zhongjiang">
+        <a class="zj close" href="javascript:void(0)"></a>
+        <div>
+            <p>恭喜您的手机号</p>
+            <p class="telephone">13500000000</p>
+            <p>获得<span>1GB</span>全国流量</p>
+            <p>流量将于15日内到账</p>
+            <p>有效期至本月月末</p>
+            <p>（流量到账后，立即生效）</p>
+        </div>
+        <img class="zj close jump" src="./images/fxy.gif">
+    </section>
+
+    <!-- 异网弹窗 转增 （流量）-->
+    <section class="ywtc zhuanzeng">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <p>恭喜您的手机号</p>
+            <p class="telephone">15810261659</p>
+            <p>获得<span>1GB</span>全国流量</p>
+            <p>您可以转赠到</p>
+            <p>北京移动号码内</p>
+            <p>（流量仅可在活动期间进行转赠）</p>
+        </div>
+        <a class="close" href="javascript:void(0)"></a>
+        <a class="zztc-btn" href="javascript:void(0)"></a>
+    </section>
+
+    <!-- 异网弹窗  转赠（兑换码）-->
+    <section class="ywtc dhm">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <p>恭喜</p>
+            <p>您的手机号<span class="telephone">15810261659</span></p>
+            <p>获得一个<span>礼品兑换券</span></p>
+            <p>兑换码：<span id="copy-target">XXXXXXXXXXXXXX</span></p>
+            <a data-clipboard-action="copy" data-clipboard-target="#copy-target" id="copy-btn" href="javascript:void(0)">复制兑换码</a>
+            <p>点击按钮即可复制兑换码</p>
+        </div>
+        <a id="look-way-btn" href="javascript:void(0)"></a>
+    </section>
+
+    <!-- 查看兑换方法页 -->
+    <section class="way" id="way">
+        <div>
+            <ul>
+                <li>
+                    <h3>奖品：</h3>
+                    <p>叮当快药礼品兑换券</p>
+                    <h3>使用规则：</h3>
+                    <p>1、获奖用户需在2月22日元宵节活动结束前兑换电子优惠券，电子优惠券自领取后的7天内有效；</p>
+                    <p>2、获奖用户至叮当快药APP或者微信公众号通过手机号注册/登录，在“我的”→“优惠券”中兑换电子优惠券，同一用户ID、手机号、收件人、支付账户仅限参与一次;</p>
+                    <p>3、领取后可直接将商品券加入购物车，在结算时可用优惠券抵扣对应商品金额支付1分钱，单笔订单仅限使用一张，且不与其他优惠同享;</p>
+                    <p>4、在北京叮当快药配送范围内的用户可享受首单免费送到家服务，不在配送范围内的用户需支付相应邮费; 其他区域在叮当商城订单邮费自理（满79元免运费）；</p>
+                    <p>5、商品数量有限，领完为止，如发现恶意刷单等行为叮当快药将有权取消相关订单；</p>
+                    <p>6、在法律允许范围内本活动最终解释权归叮当快药所有；</p>
+                    <p>7、叮当快药客服电话: 95028。</p>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript: void(0)" class="way-back"></a>
+    </section>
+
+    <!-- 异网弹窗 输入号码 -->
+    <section class="ywtc tel">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <p>请输入好友</p>
+            <p>北京移动手机号码</p>
+            <div>
+                <p>手机号码：</p>
+                <input id="yd-tel" type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)">
+            </div>
+            <p>流量仅可在活动期间进行转赠</p>
+        </div>
+        <a class="teltc-btn" href="javascript:void(0)"></a>
+    </section>
+
+    <!-- 异网弹窗 信息确认 -->
+    <section class="ywtc queren">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <p>你是否将</p>
+            <p><span>1GB</span>全国流量</p>
+            <p>转赠到手机号码</p>
+            <p id="fri-tel"></p>
+            <p>账户中</p>
+            <p>点击确认后，信息将不可更改</p>
+        </div>
+        <a class="qrbtn-1" href="javascript:void(0)"></a>
+        <a class="qrbtn-2" href="javascript:void(0)"></a>
+    </section>
+
+    <!-- 异网弹窗 转增完毕 -->
+    <section class="ywtc over">
+        <a class="close" href="javascript:void(0)"></a>
+        <div>
+            <p>您已将</p>
+            <p><span>1GB</span>全国流量</p>
+            <p>转赠到手机号码</p>
+            <p><span class="telephone">13500000000</span>账户中</p>
+            <p>流量将于15日内到账</p>
+            <p>有效期至本月月末</p>
+            <p>（流量到账后，立即生效）</p>
+        </div>
+        <img class="over-btn" src="./images/yiwang.gif" alt="">
+        <!-- <a class="close" href="javascript:void(0)"></a>
+        <a class="over-btn" href="javascript:void(0)"></a> -->
+    </section>
+
+    <!-- 领奖提示页 -->
+    <section class="ljts">
+        <div></div>
+        <div>
+            <p>尊敬的用户，您还没有绑定手机号码哦！</p>
+            <p>快来在下方完成您的绑定吧~</p>
+            <p>绑定后即可参与抽奖，最高可得<span>10GB</span>!</p>
+        </div>
+        <div>
+            <input type="number" pattern="[0-9]*" oninput="if(value.length>11)value=value.slice(0,11)">
+            <i></i>
+        </div>
+        <div>
+            <div>
+                <input type="text">
+            </div>
+            <input id="codeBtn" type="button" value="发送验证码">
+        </div>
+        <a class="submit" href="javascript:void(0)"></a>
+        <a href="javascript:void(0)" class="other">关联说明服务</a>
+        <div class="tips">
+            <ul>
+                <li>
+                    <p>1、为什么要进行号码关联？<br>号码关联“北京移动”微信公众号，可随时随地查询本机话费、流量等信息，参与活动领取各种福利哦~<br>温馨提示：如需更换关联手机号码，请您在公众号下方点击“查询-个人中心”选择手机号码进行更换。<br>2、关联号码后可以获得哪些服务？<br>您将获得的服务包含但不限于如下：<br>a)查询关联号码的流量、话费、账单、套餐等账户信息；<br>b)查看最新优惠活动；<br>c)享受账单变动、流量余额、宽带到期等提醒。<br>温馨提示：参与活动所得奖品将默认发放到您的关联手机号码内，特殊发奖方式已活动说明为准 。</p>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" class="close"></a>
+        </div>
+    </section>
+    <!-- 遮罩层 -->
+    <section id="mask" class="mask"></section>
+</body>
+</html>
+<script src="js/html2canvas.min.js"></script>
+<script src="js/qrcode.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    new QRCode(document.getElementById("qrcode"), "http://www.baidu.com");
+</script>

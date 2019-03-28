@@ -1,0 +1,221 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #bb353c;
+    section:not(.home){
+        position: relative;
+        padding-top: .48rem;
+        >div{
+            width: 7.5rem;
+            &:nth-child(1){
+                height: 5.32rem;
+                background: url(../images/bg_01.png) center no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(2){
+                height: 5.14rem;
+                background: url(../images/bg_02.png) center no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(3){
+                position: absolute;
+            }
+        }
+    }
+    /* 首页 */
+    section.home{
+        display: none;
+        position: fixed;
+        top: 0;
+        >div{
+            position: relative;
+            width: 7.5rem;
+            a{
+                position: absolute;
+            }
+            &:nth-child(1){
+                height: 4.5rem;
+                background: url(../images/home_bg_01.png) center no-repeat;
+                background-size: cover;
+                a{
+                    top: .3rem;
+                    right: .3rem;
+                    width: 1.51rem;
+                    height: .58rem;
+                    background: url(../images/rule_btn.png) center no-repeat;
+                    background-size: cover;
+                }
+            }
+            &:nth-child(2){
+                height: 4.4rem;
+                background: url(../images/home_bg_02.png) center no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(3){
+                height: 4.8rem;
+                background: url(../images/home_bg_03.png) center no-repeat;
+                background-size: cover;
+                a{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 3.17rem;
+                    height: 1.17rem;
+                    background: url(../images/start_btn.png) center no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    /* 活动规则页 */
+    section.rule{
+        display: none;
+        >div:nth-child(3){
+            top: .6rem;
+            >div{
+                box-sizing: border-box;
+                margin: 0 auto;
+                padding-top: .2rem;
+                width: 6.14rem;
+                height: 8.56rem;
+                border-radius: .2rem;
+                background-color: #d5444b;
+                h2{
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 5.74rem;
+                    height: .76rem;
+                    border-radius: .2rem;
+                    background-color: #e3555c;
+                    span{
+                        width: 1.6rem;
+                        height: .35rem;
+                        background: url(../images/hdgz.png) center no-repeat;
+                        background-size: cover;
+                    }
+                }
+                ul{
+                    overflow: scroll;
+                    margin: .26rem auto;
+                    width: 5.34rem;
+                    height: 7rem;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    li{
+                        font-size: .24rem;
+                        text-align: justify;
+                        color: #f6d1ac;
+                        h3{
+                            line-height: 2em;
+                        }
+                        p{
+                            text-indent: 2em;
+                            line-height: 1.6em;
+                        }
+                    }
+                }
+            }
+            >a{
+                display: block;
+                margin: .64rem auto 0;
+                width: 3.13rem;
+                height: 1.11rem;
+                background: url(../images/btn_qd.png) center no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    /* 关注公众号页 */
+    section.attention{
+        display: none;
+        >div:nth-child(3){
+            top: 0;
+            >div{
+                &:nth-child(1){
+                    padding-top: 1.1rem;
+                    p{
+                        font-size: .28rem;
+                        line-height: 1.8em;
+                        text-align: center;
+                        color: #ffb8b8;
+                    }
+                }
+                &:nth-child(2){
+                    margin: .36rem auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 4.16rem;
+                    height: 4.16rem;
+                    border-radius: .15rem;
+                    background-color: #d5444b;
+                    div{
+                        overflow: hidden;
+                        width: 3.76rem;
+                        height: 3.76rem;
+                        border-radius: .15rem;
+                        background-color: #e3555c;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            >p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: .28rem;
+                line-height: 1em;
+                text-align: center;
+                color: #ffb8b8;
+                i{
+                    margin: 0 .18rem;
+                    width: .36rem;
+                    height: .02rem;
+                    background-color: #ffb8b8;
+                }
+            }
+        }
+    }
+    /* 主页 */
+    section.main{
+        >div:nth-child(3){
+            top: 0;
+            >a.rule-btn{
+                position: absolute;
+                top: .3rem;
+                right: .3rem;
+                width: 1.51rem;
+                height: .58rem;
+                background: url(../images/rule_btn.png) center no-repeat;
+                background-size: cover;
+            }
+            >div.user-info{
+                >div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    width: 1.06rem;
+                    height: 1.06rem;
+                    border: 3px solid #000000;
+                    border-radius: .2rem;
+                    background-color: #febd59;
+                    div{
+                        box-sizing: border-box;
+                        width: .86rem;
+                        height: .86rem;
+                        border: 3px solid #000000;
+                        border-radius: .2rem;
+                    }
+                }
+            }
+        }
+    }
+}

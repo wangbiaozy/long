@@ -1,0 +1,2183 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #bb353c;
+  /* loading */
+  /* 首页 */
+  /* 活动规则页 */
+  /* 关注公众号页 */
+  /* 主页 */
+  /* 绑定手机号页 */
+  /* 分享浮层 */
+  /* 好友入口页 */
+  /* 弹窗 */
+  /* 遮罩层 */
+}
+html section:not(.disable),
+body section:not(.disable) {
+  position: relative;
+  padding-top: .48rem;
+}
+html section:not(.disable) > div,
+body section:not(.disable) > div {
+  width: 7.5rem;
+}
+html section:not(.disable) > div:nth-child(1),
+body section:not(.disable) > div:nth-child(1) {
+  height: 5.32rem;
+  background: url(../images/bg_01.png) center no-repeat;
+  background-size: cover;
+}
+html section:not(.disable) > div:nth-child(2),
+body section:not(.disable) > div:nth-child(2) {
+  height: 5.14rem;
+  background: url(../images/bg_02.png) center no-repeat;
+  background-size: cover;
+}
+html section:not(.disable) > div:nth-child(3),
+body section:not(.disable) > div:nth-child(3) {
+  position: absolute;
+}
+html section.loader > div,
+body section.loader > div {
+  padding-top: 30%;
+}
+html section.loader > div:nth-child(2),
+body section.loader > div:nth-child(2) {
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: center;
+  font-style: italic;
+  color: #000000;
+}
+html section.loader > div:nth-child(3),
+body section.loader > div:nth-child(3) {
+  box-sizing: border-box;
+  padding: 2px;
+  margin: 0 auto;
+  width: 15em;
+  height: .5em;
+  background-color: #f3b64b;
+  border-radius: .4em;
+}
+html section.loader > div:nth-child(3) div,
+body section.loader > div:nth-child(3) div {
+  width: 30%;
+  height: .24em;
+  border-radius: .4em;
+  background-color: #d67323;
+}
+html section.home,
+body section.home {
+  display: none;
+  position: fixed;
+  top: 0;
+}
+html section.home > div,
+body section.home > div {
+  position: relative;
+  width: 7.5rem;
+}
+html section.home > div a,
+body section.home > div a {
+  position: absolute;
+}
+html section.home > div:nth-child(1),
+body section.home > div:nth-child(1) {
+  height: 4.5rem;
+  background: url(../images/home_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(1) a,
+body section.home > div:nth-child(1) a {
+  top: .3rem;
+  right: .3rem;
+  width: 1.51rem;
+  height: .58rem;
+  background: url(../images/rule_btn.png) center no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(2),
+body section.home > div:nth-child(2) {
+  height: 4.4rem;
+  background: url(../images/home_bg_02.png) center no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(3),
+body section.home > div:nth-child(3) {
+  height: 4.8rem;
+  background: url(../images/home_bg_03.png) center no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(3) a,
+body section.home > div:nth-child(3) a {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3.17rem;
+  height: 1.17rem;
+  background: url(../images/start_btn.png) center no-repeat;
+  background-size: cover;
+}
+html section.rule,
+body section.rule,
+html section.way,
+body section.way {
+  display: none;
+}
+html section.rule > div:nth-child(3),
+body section.rule > div:nth-child(3),
+html section.way > div:nth-child(3),
+body section.way > div:nth-child(3) {
+  top: .6rem;
+}
+html section.rule > div:nth-child(3) > div,
+body section.rule > div:nth-child(3) > div,
+html section.way > div:nth-child(3) > div,
+body section.way > div:nth-child(3) > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: .2rem;
+  width: 6.14rem;
+  height: 8.56rem;
+  border-radius: .2rem;
+  background-color: #d5444b;
+}
+html section.rule > div:nth-child(3) > div h2,
+body section.rule > div:nth-child(3) > div h2,
+html section.way > div:nth-child(3) > div h2,
+body section.way > div:nth-child(3) > div h2 {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.74rem;
+  height: .76rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.rule > div:nth-child(3) > div h2 span,
+body section.rule > div:nth-child(3) > div h2 span,
+html section.way > div:nth-child(3) > div h2 span,
+body section.way > div:nth-child(3) > div h2 span {
+  width: 1.6rem;
+  height: .35rem;
+  background: url(../images/hdgz.png) center no-repeat;
+  background-size: cover;
+}
+html section.rule > div:nth-child(3) > div h2 span.way-text,
+body section.rule > div:nth-child(3) > div h2 span.way-text,
+html section.way > div:nth-child(3) > div h2 span.way-text,
+body section.way > div:nth-child(3) > div h2 span.way-text {
+  width: 1.56rem;
+  height: .35rem;
+  background: url(../images/dhff.png) center no-repeat;
+  background-size: cover;
+}
+html section.rule > div:nth-child(3) > div ul,
+body section.rule > div:nth-child(3) > div ul,
+html section.way > div:nth-child(3) > div ul,
+body section.way > div:nth-child(3) > div ul {
+  overflow: scroll;
+  margin: .26rem auto;
+  width: 5.34rem;
+  height: 7rem;
+}
+html section.rule > div:nth-child(3) > div ul::-webkit-scrollbar,
+body section.rule > div:nth-child(3) > div ul::-webkit-scrollbar,
+html section.way > div:nth-child(3) > div ul::-webkit-scrollbar,
+body section.way > div:nth-child(3) > div ul::-webkit-scrollbar {
+  display: none;
+}
+html section.rule > div:nth-child(3) > div ul li,
+body section.rule > div:nth-child(3) > div ul li,
+html section.way > div:nth-child(3) > div ul li,
+body section.way > div:nth-child(3) > div ul li {
+  font-size: .24rem;
+  text-align: justify;
+  color: #f6d1ac;
+}
+html section.rule > div:nth-child(3) > div ul li h3,
+body section.rule > div:nth-child(3) > div ul li h3,
+html section.way > div:nth-child(3) > div ul li h3,
+body section.way > div:nth-child(3) > div ul li h3 {
+  line-height: 2em;
+}
+html section.rule > div:nth-child(3) > div ul li p,
+body section.rule > div:nth-child(3) > div ul li p,
+html section.way > div:nth-child(3) > div ul li p,
+body section.way > div:nth-child(3) > div ul li p {
+  text-indent: 2em;
+  line-height: 1.6em;
+}
+html section.rule > div:nth-child(3) > a,
+body section.rule > div:nth-child(3) > a,
+html section.way > div:nth-child(3) > a,
+body section.way > div:nth-child(3) > a {
+  display: block;
+  margin: .64rem auto 0;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_qd.png) center no-repeat;
+  background-size: cover;
+}
+html section.attention,
+body section.attention {
+  display: none;
+}
+html section.attention > div:nth-child(3),
+body section.attention > div:nth-child(3) {
+  top: 0;
+}
+html section.attention > div:nth-child(3) > div:nth-child(1),
+body section.attention > div:nth-child(3) > div:nth-child(1) {
+  padding-top: 1.1rem;
+}
+html section.attention > div:nth-child(3) > div:nth-child(1) p,
+body section.attention > div:nth-child(3) > div:nth-child(1) p {
+  font-size: .28rem;
+  line-height: 1.8em;
+  text-align: center;
+  color: #ffb8b8;
+}
+html section.attention > div:nth-child(3) > div:nth-child(2),
+body section.attention > div:nth-child(3) > div:nth-child(2) {
+  margin: .36rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.16rem;
+  height: 4.16rem;
+  border-radius: .15rem;
+  background-color: #d5444b;
+}
+html section.attention > div:nth-child(3) > div:nth-child(2) div,
+body section.attention > div:nth-child(3) > div:nth-child(2) div {
+  overflow: hidden;
+  width: 3.76rem;
+  height: 3.76rem;
+  border-radius: .15rem;
+  background-color: #e3555c;
+}
+html section.attention > div:nth-child(3) > div:nth-child(2) div img,
+body section.attention > div:nth-child(3) > div:nth-child(2) div img {
+  width: 100%;
+  height: 100%;
+}
+html section.attention > div:nth-child(3) > p,
+body section.attention > div:nth-child(3) > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .28rem;
+  line-height: 1em;
+  text-align: center;
+  color: #ffb8b8;
+}
+html section.attention > div:nth-child(3) > p i,
+body section.attention > div:nth-child(3) > p i {
+  margin: 0 .18rem;
+  width: .36rem;
+  height: .02rem;
+  background-color: #ffb8b8;
+}
+html section.main,
+body section.main {
+  display: none;
+}
+html section.main > div:nth-child(3),
+body section.main > div:nth-child(3) {
+  top: 0;
+}
+html section.main > div:nth-child(3) > a.rule-btn,
+body section.main > div:nth-child(3) > a.rule-btn {
+  position: absolute;
+  top: .3rem;
+  right: .3rem;
+  width: 1.51rem;
+  height: .58rem;
+  background: url(../images/rule_btn.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > div.user-info,
+body section.main > div:nth-child(3) > div.user-info {
+  padding: .3rem 0 .2rem .68rem;
+  display: flex;
+  align-items: center;
+  /* >div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    width: 1.06rem;
+                    height: 1.06rem;
+                    border: 3px solid #000000;
+                    border-radius: .2rem;
+                    background-color: #febd59;
+                    div{
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        width: .86rem;
+                        height: .86rem;
+                        border: 3px solid #000000;
+                        border-radius: .2rem;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                } */
+}
+html section.main > div:nth-child(3) > div.user-info p,
+body section.main > div:nth-child(3) > div.user-info p {
+  box-sizing: border-box;
+  padding: 0 .28rem;
+  width: 4.74rem;
+  height: .6rem;
+  font-size: .32rem;
+  line-height: .6rem;
+  text-align: center;
+  color: #000000;
+  border-radius: .2rem;
+  background-color: #d5444b;
+}
+html section.main > div:nth-child(3) > div.user-info p span,
+body section.main > div:nth-child(3) > div.user-info p span {
+  height: .6rem;
+  line-height: .6rem;
+}
+html section.main > div:nth-child(3) > div.user-info p span:nth-child(1),
+body section.main > div:nth-child(3) > div.user-info p span:nth-child(1) {
+  display: inline-block;
+  max-width: 7em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+html section.main > div:nth-child(3) > div.user-info p span:nth-child(2),
+body section.main > div:nth-child(3) > div.user-info p span:nth-child(2) {
+  display: inline-block;
+  overflow: hidden;
+}
+html section.main > div:nth-child(3) > div.card,
+body section.main > div:nth-child(3) > div.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 6.14rem;
+  height: 7.67rem;
+  background: url(../images/card.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > div.card ul,
+body section.main > div:nth-child(3) > div.card ul {
+  position: relative;
+  overflow: hidden;
+  width: 5.88rem;
+  height: 7.42rem;
+}
+html section.main > div:nth-child(3) > div.card ul li,
+body section.main > div:nth-child(3) > div.card ul li {
+  position: absolute;
+}
+html section.main > div:nth-child(3) > div.card ul li:not(:last-child),
+body section.main > div:nth-child(3) > div.card ul li:not(:last-child) {
+  display: none;
+}
+html section.main > div:nth-child(3) > div.card ul li:not(:last-child).act,
+body section.main > div:nth-child(3) > div.card ul li:not(:last-child).act {
+  display: block;
+}
+html section.main > div:nth-child(3) > div.card ul li:nth-child(1),
+body section.main > div:nth-child(3) > div.card ul li:nth-child(1) {
+  top: .12rem;
+  right: .55rem;
+  width: 3.04rem;
+  height: 3.26rem;
+  background: url(../images/longtou.png) center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+html section.main > div:nth-child(3) > div.card ul li:nth-child(2),
+body section.main > div:nth-child(3) > div.card ul li:nth-child(2) {
+  top: .72rem;
+  right: .61rem;
+  width: 1.53rem;
+  height: 1.24rem;
+  background: url(../images/longjiao.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > div.card ul li:nth-child(3),
+body section.main > div:nth-child(3) > div.card ul li:nth-child(3) {
+  top: 1.67rem;
+  right: .41rem;
+  width: 4.42rem;
+  height: 5.35rem;
+  background: url(../images/longshen.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > div.card ul li:nth-child(4),
+body section.main > div:nth-child(3) > div.card ul li:nth-child(4) {
+  top: 2.77rem;
+  right: -0.78rem;
+  width: 4.14rem;
+  height: 3.53rem;
+  background: url(../images/longzhua.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > div.card ul li:nth-child(5),
+body section.main > div:nth-child(3) > div.card ul li:nth-child(5) {
+  top: 2.58rem;
+  right: 3.27rem;
+  width: 3.55rem;
+  height: 3.25rem;
+  background: url(../images/longwei.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > div.card ul li:last-child,
+body section.main > div:nth-child(3) > div.card ul li:last-child {
+  bottom: 0;
+  left: 0;
+  width: 5.88rem;
+  height: 3.28rem;
+  background: url(../images/yun.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > a#game-btn,
+body section.main > div:nth-child(3) > a#game-btn {
+  margin: .2rem auto;
+  display: block;
+  width: 4.33rem;
+  height: 1.11rem;
+  background: url(../images/btn_cj.png) center no-repeat;
+  background-size: cover;
+  -webkit-animation: scaleDraw 2s ease-in-out infinite;
+  animation: scaleDraw 2s ease-in-out infinite;
+}
+html section.main > div:nth-child(3) > a#game-btn.act,
+body section.main > div:nth-child(3) > a#game-btn.act {
+  background: url(../images/btn_cj_act.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > ul,
+body section.main > div:nth-child(3) > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto .2rem;
+  width: 6.14rem;
+  line-height: 1em;
+  font-size: .28rem;
+  color: #febd59;
+}
+html section.main > div:nth-child(3) > div.list-wrap,
+body section.main > div:nth-child(3) > div.list-wrap {
+  margin: 0 auto .86rem;
+  padding-bottom: .2rem;
+  width: 6.14rem;
+  border-radius: .2rem;
+  background-color: #d5444b;
+}
+html section.main > div:nth-child(3) > div.list-wrap > h3,
+body section.main > div:nth-child(3) > div.list-wrap > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.14rem;
+  height: .76rem;
+  border-radius: .2rem;
+}
+html section.main > div:nth-child(3) > div.list-wrap > h3 span,
+body section.main > div:nth-child(3) > div.list-wrap > h3 span {
+  width: 1.6rem;
+  height: .35rem;
+  background: url(../images/hyzl.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(2),
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 6.14rem;
+  height: .76rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(2) > p,
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(2) > p {
+  font-size: .32rem;
+  color: #ffb1b5;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(2) > a,
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(2) > a {
+  margin-right: -0.2rem;
+  width: 1.2rem;
+  height: .5rem;
+  background: url(../images/btn_look.png) center no-repeat;
+  background-size: cover;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(1),
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: .05rem;
+  width: 100%;
+  height: .86rem;
+  font-size: .32rem;
+  color: #000000;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2),
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) {
+  overflow-y: scroll;
+  width: 100%;
+  height: 1.6rem;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2)::-webkit-scrollbar,
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2)::-webkit-scrollbar {
+  display: none;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) li,
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) li {
+  display: flex;
+  align-items: center;
+  margin-bottom: .2rem;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) li span,
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) li span {
+  flex: 1;
+  text-align: center;
+  font-size: .24rem;
+  color: #7e0611;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) li span:nth-child(1),
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) li span:nth-child(1) {
+  box-sizing: border-box;
+  max-width: 33.33333333%;
+  padding: 0 .2rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+html section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) p,
+body section.main > div:nth-child(3) > div.list-wrap > div:nth-child(3) > ul:nth-child(2) p {
+  font-size: .32rem;
+  text-align: center;
+  line-height: 3em;
+  color: #ccc;
+}
+html section.telephone,
+body section.telephone {
+  display: none;
+}
+html section.telephone > div:nth-child(3),
+body section.telephone > div:nth-child(3) {
+  top: 2.06rem;
+}
+html section.telephone > div:nth-child(3) > div,
+body section.telephone > div:nth-child(3) > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: .18rem;
+  width: 6.14rem;
+  height: 4.96rem;
+  border-radius: .2rem;
+  border: 2px solid #000000;
+  background-color: #d5444b;
+}
+html section.telephone > div:nth-child(3) > div h3,
+body section.telephone > div:nth-child(3) > div h3 {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.74rem;
+  height: .76rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.telephone > div:nth-child(3) > div h3 span,
+body section.telephone > div:nth-child(3) > div h3 span {
+  width: 2.06rem;
+  height: .39rem;
+  background: url(../images/bdsjh.png) center no-repeat;
+  background-size: cover;
+}
+html section.telephone > div:nth-child(3) > div > p,
+body section.telephone > div:nth-child(3) > div > p {
+  margin: .3rem 0;
+  font-size: .24rem;
+  line-height: 2em;
+  text-align: center;
+  color: #7e0611;
+}
+html section.telephone > div:nth-child(3) > div > div,
+body section.telephone > div:nth-child(3) > div > div {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 5.78rem;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(3) i,
+body section.telephone > div:nth-child(3) > div > div:nth-child(3) i {
+  margin-right: .18rem;
+  width: 1.43rem;
+  height: .34rem;
+  background: url(../images/sjhm.png) center no-repeat;
+  background-size: cover;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(3) input,
+body section.telephone > div:nth-child(3) > div > div:nth-child(3) input {
+  box-sizing: border-box;
+  padding: 0 .4rem;
+  width: 4.12rem;
+  height: .76rem;
+  font-size: .32rem;
+  line-height: .76rem;
+  border-radius: .2rem;
+  border: none;
+  background-color: #ffc0c3;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(3) input::-webkit-outer-spin-button,
+body section.telephone > div:nth-child(3) > div > div:nth-child(3) input::-webkit-outer-spin-button,
+html section.telephone > div:nth-child(3) > div > div:nth-child(3) input::-webkit-inner-spin-button,
+body section.telephone > div:nth-child(3) > div > div:nth-child(3) input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(4),
+body section.telephone > div:nth-child(3) > div > div:nth-child(4) {
+  margin-top: .3rem;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(4) i,
+body section.telephone > div:nth-child(3) > div > div:nth-child(4) i {
+  width: 1.36rem;
+  height: .31rem;
+  background: url(../images/yzm.png) center no-repeat;
+  background-size: cover;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(4) input,
+body section.telephone > div:nth-child(3) > div > div:nth-child(4) input {
+  box-sizing: border-box;
+  padding: 0 .2rem;
+  height: .76rem;
+  line-height: .76rem;
+  border-radius: .2rem;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(4) input:nth-child(2),
+body section.telephone > div:nth-child(3) > div > div:nth-child(4) input:nth-child(2) {
+  margin: 0 .1rem 0 .25rem;
+  width: 2.12rem;
+  font-size: .32rem;
+  line-height: .76rem;
+  border: none;
+  background-color: #ffc0c3;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(4) input:nth-child(3),
+body section.telephone > div:nth-child(3) > div > div:nth-child(4) input:nth-child(3) {
+  padding: 0;
+  width: 1.9rem;
+  font-size: .28rem;
+  text-align: center;
+  line-height: .68rem;
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: #ea9643;
+}
+html section.telephone > div:nth-child(3) > div > div:nth-child(4) input:nth-child(3)::-webkit-outer-spin-button,
+body section.telephone > div:nth-child(3) > div > div:nth-child(4) input:nth-child(3)::-webkit-outer-spin-button,
+html section.telephone > div:nth-child(3) > div > div:nth-child(4) input:nth-child(3)::-webkit-inner-spin-button,
+body section.telephone > div:nth-child(3) > div > div:nth-child(4) input:nth-child(3)::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html section.telephone > div:nth-child(3) > a,
+body section.telephone > div:nth-child(3) > a {
+  margin: .64rem auto 0;
+  display: block;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/submit.png) center no-repeat;
+  background-size: cover;
+}
+html section.share,
+body section.share {
+  display: none;
+  padding-top: 0;
+  height: 100%;
+}
+html section.share > div,
+body section.share > div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+html section.share > div span,
+body section.share > div span {
+  position: absolute;
+  top: .3rem;
+  right: .3rem;
+  width: 5.79rem;
+  height: 2.32rem;
+  background: url(../images/share.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home.disable,
+body section.fri-home.disable {
+  display: none;
+  position: fixed;
+  top: 0;
+}
+html section.fri-home.disable > div,
+body section.fri-home.disable > div {
+  position: relative;
+  width: 7.5rem;
+}
+html section.fri-home.disable > div:nth-child(1),
+body section.fri-home.disable > div:nth-child(1) {
+  height: 4.5rem;
+  background: url(../images/fri_bg_01.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home.disable > div:nth-child(2),
+body section.fri-home.disable > div:nth-child(2) {
+  height: 3.8rem;
+  background: url(../images/fri_bg_02.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home.disable > div:nth-child(2) > div,
+body section.fri-home.disable > div:nth-child(2) > div {
+  position: absolute;
+  top: .88rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.08rem;
+  height: 4.1rem;
+  border-radius: .2rem;
+  border: 2px solid #000000;
+  background-color: #bb353c;
+  z-index: 2;
+}
+html section.fri-home.disable > div:nth-child(2) > div div,
+body section.fri-home.disable > div:nth-child(2) > div div {
+  box-sizing: border-box;
+  padding-top: .4rem;
+  width: 5.68rem;
+  height: 3.7rem;
+  border-radius: .2rem;
+  border: 2px solid #000000;
+  background-color: #e3555c;
+}
+html section.fri-home.disable > div:nth-child(2) > div div p,
+body section.fri-home.disable > div:nth-child(2) > div div p {
+  font-size: .3rem;
+  line-height: 1.8em;
+  text-align: center;
+  color: #000000;
+}
+html section.fri-home.disable > div:nth-child(2) > div div p:nth-child(1),
+body section.fri-home.disable > div:nth-child(2) > div div p:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html section.fri-home.disable > div:nth-child(2) > div div p:nth-child(1) span,
+body section.fri-home.disable > div:nth-child(2) > div div p:nth-child(1) span {
+  max-width: 6em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+html section.fri-home.disable > div:nth-child(2) > div div p:nth-child(3),
+body section.fri-home.disable > div:nth-child(2) > div div p:nth-child(3) {
+  color: #e7ea06;
+}
+html section.fri-home.disable > div:nth-child(2) > div div p:nth-child(4) span,
+body section.fri-home.disable > div:nth-child(2) > div div p:nth-child(4) span {
+  font-weight: bold;
+  color: #e7ea06;
+}
+html section.fri-home.disable > div:nth-child(3),
+body section.fri-home.disable > div:nth-child(3) {
+  height: 4.48rem;
+  background: url(../images/fri_bg_03.png) center no-repeat;
+  background-size: cover;
+}
+html section.fri-home.disable > div:nth-child(3) a,
+body section.fri-home.disable > div:nth-child(3) a {
+  position: absolute;
+  top: 1.54rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_dl.png) center no-repeat;
+  background-size: cover;
+}
+html section.model,
+body section.model {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  /* 全部点亮弹窗 */
+  /* 首次弹窗 */
+  /* 已选择弹窗 */
+  /* 第一次点击按钮得到奖励弹窗 */
+  /* 发送好友弹窗 */
+  /* 本网获得流量弹窗 */
+  /* 异网弹窗  流量 */
+  /* 异网弹窗 输入手机号 */
+  /* 异网弹窗 信息确认 */
+  /* 异网弹窗 转赠成功 */
+  /* 异网弹窗 兑换券 */
+  /* 首页后第一个引导弹窗 */
+  /* 好友页点亮弹窗 */
+}
+html section.model.tc-0,
+body section.model.tc-0 {
+  display: none;
+  top: 2rem;
+  width: 6.1rem;
+  height: 7.9rem;
+}
+html section.model.tc-0 > a,
+body section.model.tc-0 > a {
+  position: absolute;
+}
+html section.model.tc-0 > a:first-child,
+body section.model.tc-0 > a:first-child {
+  top: 0;
+  right: .54rem;
+  width: .54rem;
+  height: .54rem;
+  background: url(../images/close.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-0 > a:last-child,
+body section.model.tc-0 > a:last-child {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 2.93rem;
+  height: 1.01rem;
+  background: url(../images/btn_lj.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-0 > div,
+body section.model.tc-0 > div {
+  position: absolute;
+}
+html section.model.tc-0 > div:nth-child(2),
+body section.model.tc-0 > div:nth-child(2) {
+  top: .9rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5.48rem;
+  height: 5.48rem;
+  background: url(../images/guang1.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-0 > div:nth-child(2).act,
+body section.model.tc-0 > div:nth-child(2).act {
+  background: url(../images/guang2.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-0 > div:nth-child(3),
+body section.model.tc-0 > div:nth-child(3) {
+  top: 1.2rem;
+  left: 0;
+  width: 5.86rem;
+  height: 5.43rem;
+  background: url(../images/tc_bg.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-0 > div:nth-child(4),
+body section.model.tc-0 > div:nth-child(4) {
+  top: 1.2rem;
+  right: 1rem;
+  width: .73rem;
+  height: .22rem;
+  background: url(../images/yun_1.png) center no-repeat;
+  background-size: cover;
+  -webkit-animation: toRight 4s infinite linear;
+  animation: toRight 4s infinite linear;
+}
+html section.model.tc-0 > div:nth-child(5),
+body section.model.tc-0 > div:nth-child(5) {
+  top: 3.04rem;
+  left: .4rem;
+  height: .38rem;
+  width: .56rem;
+  height: .17rem;
+  background: url(../images/yun_2.png) center no-repeat;
+  background-size: cover;
+  -webkit-animation: toRight 4s infinite linear;
+  animation: toRight 4s infinite linear;
+}
+html section.model.tc-0 > div:nth-child(6),
+body section.model.tc-0 > div:nth-child(6) {
+  top: 2.22rem;
+  right: 0;
+  width: 1.65rem;
+  height: .49rem;
+  background: url(../images/yun_3.png) center no-repeat;
+  background-size: cover;
+  -webkit-animation: toTop 4s infinite linear;
+  animation: toTop 4s infinite linear;
+}
+html section.model.tc-0 > div:nth-child(7),
+body section.model.tc-0 > div:nth-child(7) {
+  top: 2.4rem;
+  left: 1.8rem;
+}
+html section.model.tc-0 > div:nth-child(7) img,
+body section.model.tc-0 > div:nth-child(7) img {
+  display: none;
+  position: absolute;
+  top: -0.95rem;
+  left: -0.45rem;
+  width: 1.4rem;
+}
+html section.model.tc-0 > div:nth-child(7) span,
+body section.model.tc-0 > div:nth-child(7) span {
+  position: absolute;
+  width: .59rem;
+  height: .57rem;
+  background: url(../images/longzhu.png) center no-repeat;
+  background-size: cover;
+  -webkit-animation: toLeft 1s 1 linear;
+  animation: toLeft 1s 1 linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+html section.model.tc-1,
+body section.model.tc-1 {
+  display: none;
+  top: .9rem;
+  width: 6.08rem;
+}
+html section.model.tc-1 > div,
+body section.model.tc-1 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.08rem;
+  height: 7.6rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-1 > div > div,
+body section.model.tc-1 > div > div {
+  box-sizing: border-box;
+  padding-top: .2rem;
+  width: 5.68rem;
+  height: 7.2rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-1 > div > div p,
+body section.model.tc-1 > div > div p {
+  font-size: .28rem;
+  line-height: 1.6em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-1 > div > div p:nth-child(2),
+body section.model.tc-1 > div > div p:nth-child(2) {
+  color: #e7ea06;
+}
+html section.model.tc-1 > div > div p:nth-child(4) span,
+body section.model.tc-1 > div > div p:nth-child(4) span {
+  font-weight: bold;
+  color: #e7ea06;
+}
+html section.model.tc-1 > div > div ul,
+body section.model.tc-1 > div > div ul {
+  display: flex;
+  justify-content: space-between;
+  margin: .2rem auto .28rem;
+  width: 5.32rem;
+}
+html section.model.tc-1 > div > div ul li,
+body section.model.tc-1 > div > div ul li {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 3.08rem;
+  border: .03rem solid #000000;
+  border-radius: .2rem;
+  background-color: #8c8c8c;
+}
+html section.model.tc-1 > div > div ul li.act,
+body section.model.tc-1 > div > div ul li.act {
+  background-color: #febd59;
+}
+html section.model.tc-1 > div > div ul li span,
+body section.model.tc-1 > div > div ul li span {
+  width: .8rem;
+  height: 2.88rem;
+}
+html section.model.tc-1 > div > div ul li:nth-child(1) span,
+body section.model.tc-1 > div > div ul li:nth-child(1) span {
+  background: url(../images/c1_default.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(1).act span,
+body section.model.tc-1 > div > div ul li:nth-child(1).act span {
+  background: url(../images/c1.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(2) span,
+body section.model.tc-1 > div > div ul li:nth-child(2) span {
+  background: url(../images/c2_default.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(2).act span,
+body section.model.tc-1 > div > div ul li:nth-child(2).act span {
+  background: url(../images/c2.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(3) span,
+body section.model.tc-1 > div > div ul li:nth-child(3) span {
+  background: url(../images/c3_default.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(3).act span,
+body section.model.tc-1 > div > div ul li:nth-child(3).act span {
+  background: url(../images/c3.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(4) span,
+body section.model.tc-1 > div > div ul li:nth-child(4) span {
+  background: url(../images/c4_default.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(4).act span,
+body section.model.tc-1 > div > div ul li:nth-child(4).act span {
+  background: url(../images/c4.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(5) span,
+body section.model.tc-1 > div > div ul li:nth-child(5) span {
+  background: url(../images/c5_default.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div ul li:nth-child(5).act span,
+body section.model.tc-1 > div > div ul li:nth-child(5).act span {
+  background: url(../images/c5.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > div > div i,
+body section.model.tc-1 > div > div i {
+  display: block;
+  margin: 0 auto;
+  width: 4.58rem;
+  height: 1.29rem;
+  background: url(../images/tc_1_text.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-1 > a,
+body section.model.tc-1 > a {
+  display: block;
+  margin: .54rem auto 0;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_dllj.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-2,
+body section.model.tc-2 {
+  display: none;
+  top: 1.8rem;
+}
+html section.model.tc-2 > div,
+body section.model.tc-2 > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 6.08rem;
+  height: 6.6rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-2 > div > h3,
+body section.model.tc-2 > div > h3 {
+  position: absolute;
+  top: -0.58rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.67rem;
+  height: 1.29rem;
+  background: url(../images/tc_title_1.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-2 > div > div,
+body section.model.tc-2 > div > div {
+  box-sizing: border-box;
+  padding-top: .46rem;
+  width: 5.68rem;
+  height: 6.2rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-2 > div > div p,
+body section.model.tc-2 > div > div p {
+  font-size: .24rem;
+  text-align: center;
+  line-height: 1.8em;
+  color: #000000;
+}
+html section.model.tc-2 > div > div p:nth-child(2),
+body section.model.tc-2 > div > div p:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+html section.model.tc-2 > div > div p:nth-child(2) span,
+body section.model.tc-2 > div > div p:nth-child(2) span {
+  font-size: .32rem;
+  font-weight: bold;
+}
+html section.model.tc-2 > div > div p:last-child,
+body section.model.tc-2 > div > div p:last-child {
+  margin-top: .2rem;
+  line-height: 1.6em;
+  color: #84090f;
+}
+html section.model.tc-2 > div > div p:last-child span,
+body section.model.tc-2 > div > div p:last-child span {
+  font-size: .32rem;
+  font-weight: bold;
+}
+html section.model.tc-2 > div > div > div,
+body section.model.tc-2 > div > div > div {
+  box-sizing: border-box;
+  margin: .2rem auto 0;
+  padding: .13rem;
+  width: 5.34rem;
+  height: 3.07rem;
+  background: url(../images/tc_card.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-2 > div > div > div div,
+body section.model.tc-2 > div > div > div div {
+  position: relative;
+  overflow: hidden;
+  width: 5.08rem;
+  height: 2.81rem;
+  border-radius: .2rem;
+}
+html section.model.tc-2 > div > div > div div img,
+body section.model.tc-2 > div > div > div div img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5.08rem;
+  height: auto;
+}
+html section.model.tc-2 > a,
+body section.model.tc-2 > a {
+  margin: .62rem auto 0;
+  display: block;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_qdl.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-3,
+body section.model.tc-3 {
+  display: none;
+  top: 2rem;
+}
+html section.model.tc-3 > div,
+body section.model.tc-3 > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 6.1rem;
+  height: 6.5rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-3 > div > h3,
+body section.model.tc-3 > div > h3 {
+  position: absolute;
+  top: -0.64rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.67rem;
+  height: 1.29rem;
+  background: url(../images/tc_title_1.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-3 > div > div,
+body section.model.tc-3 > div > div {
+  box-sizing: border-box;
+  padding-top: .3rem;
+  width: 5.68rem;
+  height: 6.1rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-3 > div > div p,
+body section.model.tc-3 > div > div p {
+  font-size: .24rem;
+  line-height: 1.8em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-3 > div > div p:nth-child(1) span,
+body section.model.tc-3 > div > div p:nth-child(1) span {
+  font-size: .32rem;
+  font-weight: bold;
+}
+html section.model.tc-3 > div > div p:nth-child(1) span,
+body section.model.tc-3 > div > div p:nth-child(1) span,
+html section.model.tc-3 > div > div p:nth-child(3) span,
+body section.model.tc-3 > div > div p:nth-child(3) span {
+  color: #e7ea06;
+}
+html section.model.tc-3 > div > div p:nth-child(6),
+body section.model.tc-3 > div > div p:nth-child(6) {
+  font-size: .24rem;
+  color: #84090f;
+}
+html section.model.tc-3 > div > div p:nth-child(6) span,
+body section.model.tc-3 > div > div p:nth-child(6) span {
+  font-size: .32rem;
+}
+html section.model.tc-3 > div > div > a,
+body section.model.tc-3 > div > div > a {
+  /* position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        bottom: 1.45rem; */
+  display: block;
+  margin: .2rem auto;
+  width: 5.1rem;
+  height: 2.74rem;
+  background: url(../images/banner_cm.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-3 > a:nth-child(1),
+body section.model.tc-3 > a:nth-child(1) {
+  position: absolute;
+  top: -0.9rem;
+  right: .68rem;
+  width: .54rem;
+  height: .54rem;
+  background: url(../images/close.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-3 > a:nth-child(3),
+body section.model.tc-3 > a:nth-child(3) {
+  display: block;
+  margin: .44rem auto 0;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_qkk.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-4,
+body section.model.tc-4,
+html section.model.tc-12,
+body section.model.tc-12 {
+  display: none;
+  top: 3.6rem;
+}
+html section.model.tc-4 > div,
+body section.model.tc-4 > div,
+html section.model.tc-12 > div,
+body section.model.tc-12 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 5.28rem;
+  height: 3rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-4 > div div,
+body section.model.tc-4 > div div,
+html section.model.tc-12 > div div,
+body section.model.tc-12 > div div {
+  box-sizing: border-box;
+  padding-top: .4rem;
+  width: 4.88rem;
+  height: 2.6rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-4 > div div p,
+body section.model.tc-4 > div div p,
+html section.model.tc-12 > div div p,
+body section.model.tc-12 > div div p {
+  font-size: .28rem;
+  line-height: 1.6em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-4 > a,
+body section.model.tc-4 > a,
+html section.model.tc-12 > a,
+body section.model.tc-12 > a {
+  display: block;
+  margin: .64rem auto 0;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_fshy.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-12 > div div,
+body section.model.tc-12 > div div {
+  padding-top: .8rem;
+}
+html section.model.tc-12 > a,
+body section.model.tc-12 > a {
+  background: url(../images/btn_hd.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-5,
+body section.model.tc-5 {
+  display: none;
+  top: 2rem;
+}
+html section.model.tc-5 > div,
+body section.model.tc-5 > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 5.28rem;
+  height: 5.38rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-5 > div > h3,
+body section.model.tc-5 > div > h3 {
+  position: absolute;
+  top: -0.55rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3.81rem;
+  height: 1.15rem;
+  background: url(../images/tc_title_2.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-5 > div > div,
+body section.model.tc-5 > div > div {
+  box-sizing: border-box;
+  padding-top: .4rem;
+  width: 4.88rem;
+  height: 4.98rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-5 > div > div p,
+body section.model.tc-5 > div > div p {
+  font-size: .24rem;
+  line-height: 2em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-5 > div > div p:nth-child(2),
+body section.model.tc-5 > div > div p:nth-child(2) {
+  color: #e7ea06;
+}
+html section.model.tc-5 > div > div p:nth-child(3) span,
+body section.model.tc-5 > div > div p:nth-child(3) span {
+  color: #e7ea06;
+}
+html section.model.tc-5 > div > div > a,
+body section.model.tc-5 > div > div > a {
+  position: absolute;
+  left: .2rem;
+  bottom: .2rem;
+  width: 4.88rem;
+  height: 1.37rem;
+  background: url(../images/banner1.gif) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-5 > a:nth-child(1),
+body section.model.tc-5 > a:nth-child(1) {
+  position: absolute;
+  top: -0.9rem;
+  right: 1.08rem;
+  width: .54rem;
+  height: .54rem;
+  background: url(../images/close.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-5 > a:nth-child(3),
+body section.model.tc-5 > a:nth-child(3) {
+  display: block;
+  margin: .44rem auto 0;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_qlq.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-6,
+body section.model.tc-6,
+html section.model.tc-6-1,
+body section.model.tc-6-1 {
+  display: none;
+  top: 3.2rem;
+}
+html section.model.tc-6 > div,
+body section.model.tc-6 > div,
+html section.model.tc-6-1 > div,
+body section.model.tc-6-1 > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 5.28rem;
+  height: 4.3rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-6 > div > h3,
+body section.model.tc-6 > div > h3,
+html section.model.tc-6-1 > div > h3,
+body section.model.tc-6-1 > div > h3 {
+  position: absolute;
+  top: -0.55rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3.81rem;
+  height: 1.15rem;
+  background: url(../images/tc_title_3.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-6 > div > div,
+body section.model.tc-6 > div > div,
+html section.model.tc-6-1 > div > div,
+body section.model.tc-6-1 > div > div {
+  box-sizing: border-box;
+  padding-top: .4rem;
+  width: 4.88rem;
+  height: 3.9rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-6 > div > div p,
+body section.model.tc-6 > div > div p,
+html section.model.tc-6-1 > div > div p,
+body section.model.tc-6-1 > div > div p {
+  font-size: .24rem;
+  line-height: 2em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-6 > div > div p:nth-child(2),
+body section.model.tc-6 > div > div p:nth-child(2),
+html section.model.tc-6-1 > div > div p:nth-child(2),
+body section.model.tc-6-1 > div > div p:nth-child(2) {
+  color: #e7ea06;
+}
+html section.model.tc-6 > div > div p:nth-child(3) span,
+body section.model.tc-6 > div > div p:nth-child(3) span,
+html section.model.tc-6-1 > div > div p:nth-child(3) span,
+body section.model.tc-6-1 > div > div p:nth-child(3) span,
+html section.model.tc-6 > div > div p:nth-child(4) span,
+body section.model.tc-6 > div > div p:nth-child(4) span,
+html section.model.tc-6-1 > div > div p:nth-child(4) span,
+body section.model.tc-6-1 > div > div p:nth-child(4) span {
+  color: #e7ea06;
+}
+html section.model.tc-6 > div > div > a,
+body section.model.tc-6 > div > div > a,
+html section.model.tc-6-1 > div > div > a,
+body section.model.tc-6-1 > div > div > a {
+  position: absolute;
+  left: .2rem;
+  bottom: .2rem;
+  width: 4.88rem;
+  height: 1.37rem;
+  background: url(../images/banner.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-6 > a:nth-child(2),
+body section.model.tc-6 > a:nth-child(2),
+html section.model.tc-6-1 > a:nth-child(2),
+body section.model.tc-6-1 > a:nth-child(2) {
+  display: inline-block;
+  margin: .4rem .24rem 0 1.11rem;
+  width: 2.54rem;
+  height: 1.11rem;
+  background: url(../images/btn_qx.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-6 > a:nth-child(3),
+body section.model.tc-6 > a:nth-child(3),
+html section.model.tc-6-1 > a:nth-child(3),
+body section.model.tc-6-1 > a:nth-child(3) {
+  display: inline-block;
+  width: 2.54rem;
+  height: 1.11rem;
+  background: url(../images/btn_zz.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-7,
+body section.model.tc-7,
+html section.model.tc-7-1,
+body section.model.tc-7-1 {
+  display: none;
+  top: 3.3rem;
+}
+html section.model.tc-7 > div,
+body section.model.tc-7 > div,
+html section.model.tc-7-1 > div,
+body section.model.tc-7-1 > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: .66rem;
+  width: 5.34rem;
+  height: 3.36rem;
+  border-radius: .2rem;
+  background-color: #d5444b;
+}
+html section.model.tc-7 > div > p,
+body section.model.tc-7 > div > p,
+html section.model.tc-7-1 > div > p,
+body section.model.tc-7-1 > div > p {
+  font-size: .2rem;
+  line-height: 1em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-7 > div > div,
+body section.model.tc-7 > div > div,
+html section.model.tc-7-1 > div > div,
+body section.model.tc-7-1 > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .44rem 0 .6rem;
+}
+html section.model.tc-7 > div > div h3,
+body section.model.tc-7 > div > div h3,
+html section.model.tc-7-1 > div > div h3,
+body section.model.tc-7-1 > div > div h3 {
+  margin-right: .16rem;
+  width: 1.43rem;
+  height: .34rem;
+  background: url(../images/sjhm.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-7 > div > div input,
+body section.model.tc-7 > div > div input,
+html section.model.tc-7-1 > div > div input,
+body section.model.tc-7-1 > div > div input {
+  box-sizing: border-box;
+  padding: 0 .4rem;
+  width: 3.32rem;
+  height: .76rem;
+  font-size: .32rem;
+  line-height: .76rem;
+  border-radius: .2rem;
+  border: none;
+  background-color: #ffc0c3;
+}
+html section.model.tc-7 > a,
+body section.model.tc-7 > a,
+html section.model.tc-7-1 > a,
+body section.model.tc-7-1 > a {
+  margin: .66rem auto 0;
+  display: block;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_qd.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-8,
+body section.model.tc-8,
+html section.model.tc-8-1,
+body section.model.tc-8-1 {
+  display: none;
+  top: 2.1rem;
+}
+html section.model.tc-8 > div,
+body section.model.tc-8 > div,
+html section.model.tc-8-1 > div,
+body section.model.tc-8-1 > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: .2rem;
+  width: 5.34rem;
+  height: 4.96rem;
+  border-radius: .2rem;
+  background-color: #d5444b;
+}
+html section.model.tc-8 > div > h3,
+body section.model.tc-8 > div > h3,
+html section.model.tc-8-1 > div > h3,
+body section.model.tc-8-1 > div > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto .5rem;
+  width: 4.92rem;
+  height: .76rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-8 > div > h3 span,
+body section.model.tc-8 > div > h3 span,
+html section.model.tc-8-1 > div > h3 span,
+body section.model.tc-8-1 > div > h3 span {
+  width: 1.65rem;
+  height: .34rem;
+  background: url(../images/xxqr.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-8 > div > p,
+body section.model.tc-8 > div > p,
+html section.model.tc-8-1 > div > p,
+body section.model.tc-8-1 > div > p {
+  font-size: .24rem;
+  line-height: 2em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-8 > div > p:nth-child(3) span,
+body section.model.tc-8 > div > p:nth-child(3) span,
+html section.model.tc-8-1 > div > p:nth-child(3) span,
+body section.model.tc-8-1 > div > p:nth-child(3) span {
+  color: #ffc770;
+}
+html section.model.tc-8 > div > p:nth-child(5),
+body section.model.tc-8 > div > p:nth-child(5),
+html section.model.tc-8-1 > div > p:nth-child(5),
+body section.model.tc-8-1 > div > p:nth-child(5) {
+  color: #ffc770;
+}
+html section.model.tc-8 > a:nth-child(2),
+body section.model.tc-8 > a:nth-child(2),
+html section.model.tc-8-1 > a:nth-child(2),
+body section.model.tc-8-1 > a:nth-child(2) {
+  display: inline-block;
+  margin: .4rem .24rem 0 1.11rem;
+  width: 2.54rem;
+  height: 1.11rem;
+  background: url(../images/btn_xg.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-8 > a:nth-child(3),
+body section.model.tc-8 > a:nth-child(3),
+html section.model.tc-8-1 > a:nth-child(3),
+body section.model.tc-8-1 > a:nth-child(3) {
+  display: inline-block;
+  width: 2.54rem;
+  height: 1.11rem;
+  background: url(../images/btn_qr.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-9,
+body section.model.tc-9,
+html section.model.tc-9-1,
+body section.model.tc-9-1 {
+  display: none;
+  top: 2rem;
+}
+html section.model.tc-9 > div,
+body section.model.tc-9 > div,
+html section.model.tc-9-1 > div,
+body section.model.tc-9-1 > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 5.28rem;
+  height: 5.76rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-9 > div > h3,
+body section.model.tc-9 > div > h3,
+html section.model.tc-9-1 > div > h3,
+body section.model.tc-9-1 > div > h3 {
+  position: absolute;
+  top: -0.55rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3.81rem;
+  height: 1.15rem;
+  background: url(../images/tc_title_2.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-9 > div > div,
+body section.model.tc-9 > div > div,
+html section.model.tc-9-1 > div > div,
+body section.model.tc-9-1 > div > div {
+  box-sizing: border-box;
+  padding-top: .4rem;
+  width: 4.88rem;
+  height: 5.36rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-9 > div > div p,
+body section.model.tc-9 > div > div p,
+html section.model.tc-9-1 > div > div p,
+body section.model.tc-9-1 > div > div p {
+  font-size: .24rem;
+  line-height: 1.8em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-9 > div > div p:nth-child(2) span,
+body section.model.tc-9 > div > div p:nth-child(2) span,
+html section.model.tc-9-1 > div > div p:nth-child(2) span,
+body section.model.tc-9-1 > div > div p:nth-child(2) span {
+  color: #e7ea06;
+}
+html section.model.tc-9 > div > div p:nth-child(4),
+body section.model.tc-9 > div > div p:nth-child(4),
+html section.model.tc-9-1 > div > div p:nth-child(4),
+body section.model.tc-9-1 > div > div p:nth-child(4) {
+  color: #e7ea06;
+}
+html section.model.tc-9 > div > div > a,
+body section.model.tc-9 > div > div > a,
+html section.model.tc-9-1 > div > div > a,
+body section.model.tc-9-1 > div > div > a {
+  position: absolute;
+  left: .2rem;
+  bottom: .2rem;
+  width: 4.88rem;
+  height: 1.37rem;
+  background: url(../images/banner.gif) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-9 > a:nth-child(1),
+body section.model.tc-9 > a:nth-child(1),
+html section.model.tc-9-1 > a:nth-child(1),
+body section.model.tc-9-1 > a:nth-child(1) {
+  position: absolute;
+  top: -0.9rem;
+  right: 1.08rem;
+  width: .54rem;
+  height: .54rem;
+  background: url(../images/close.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-9 > a:nth-child(3),
+body section.model.tc-9 > a:nth-child(3),
+html section.model.tc-9-1 > a:nth-child(3),
+body section.model.tc-9-1 > a:nth-child(3) {
+  display: block;
+  margin: .44rem auto 0;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_qlq.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-9-1 > a:nth-child(3),
+body section.model.tc-9-1 > a:nth-child(3) {
+  background: url(../images/btn_qd.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-10,
+body section.model.tc-10 {
+  display: none;
+  top: 3.2rem;
+}
+html section.model.tc-10 > a:nth-child(1),
+body section.model.tc-10 > a:nth-child(1) {
+  position: absolute;
+  top: -1.2rem;
+  right: 1.08rem;
+  width: .54rem;
+  height: .54rem;
+  background: url(../images/close.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-10 > div,
+body section.model.tc-10 > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 5.28rem;
+  height: 4.3rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-10 > div > h3,
+body section.model.tc-10 > div > h3 {
+  position: absolute;
+  top: -0.55rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3.81rem;
+  height: 1.15rem;
+  background: url(../images/tc_title_3.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-10 > div > div,
+body section.model.tc-10 > div > div {
+  box-sizing: border-box;
+  padding-top: .4rem;
+  width: 4.88rem;
+  height: 3.9rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-10 > div > div p,
+body section.model.tc-10 > div > div p {
+  font-size: .24rem;
+  line-height: 1.8em;
+  text-align: center;
+  color: #000000;
+}
+html section.model.tc-10 > div > div p:nth-child(2),
+body section.model.tc-10 > div > div p:nth-child(2) {
+  color: #e7ea06;
+}
+html section.model.tc-10 > div > div p:nth-child(3) span,
+body section.model.tc-10 > div > div p:nth-child(3) span,
+html section.model.tc-10 > div > div p:nth-child(4) span,
+body section.model.tc-10 > div > div p:nth-child(4) span,
+html section.model.tc-10 > div > div p:nth-child(5) span,
+body section.model.tc-10 > div > div p:nth-child(5) span {
+  color: #e7ea06;
+}
+html section.model.tc-10 > div > div > a,
+body section.model.tc-10 > div > div > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .2rem auto;
+  width: 1.8rem;
+  height: .48rem;
+  font-size: .24rem;
+  color: #000000;
+  background-color: #ea9643;
+}
+html section.model.tc-10 > div > div > a.act,
+body section.model.tc-10 > div > div > a.act {
+  background-color: #ccc;
+}
+html section.model.tc-10 > a,
+body section.model.tc-10 > a {
+  display: block;
+  margin: .44rem auto 0;
+  width: 4.23rem;
+  height: 1.11rem;
+  background: url(../images/btn_dhff.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-11,
+body section.model.tc-11 {
+  display: none;
+  top: 2.9rem;
+}
+html section.model.tc-11 > div,
+body section.model.tc-11 > div {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: .2rem;
+  width: 6.14rem;
+  height: 3.96rem;
+  border-radius: .2rem;
+  background-color: #d5444b;
+}
+html section.model.tc-11 > div > h3,
+body section.model.tc-11 > div > h3 {
+  position: absolute;
+  top: -1.54rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4.75rem;
+  height: 1.02rem;
+  background: url(../images/text_1.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-11 > div > div h3,
+body section.model.tc-11 > div > div h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto .35rem;
+  width: 5.72rem;
+  height: .76rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-11 > div > div h3 span,
+body section.model.tc-11 > div > div h3 span {
+  width: 1.62rem;
+  height: .4rem;
+  background: url(../images/hyjn.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-11 > div > div p,
+body section.model.tc-11 > div > div p {
+  padding-left: .25rem;
+  font-size: .28rem;
+  text-align: left;
+  line-height: 2.5em;
+  color: #000000;
+}
+html section.model.tc-11 > a,
+body section.model.tc-11 > a {
+  display: block;
+  margin: .66rem auto 0;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_qcl.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-fri,
+body section.model.tc-fri {
+  display: none;
+  top: 1.5rem;
+}
+html section.model.tc-fri > div,
+body section.model.tc-fri > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 6.08rem;
+  height: 6.8rem;
+  border-radius: .2rem;
+  background-color: #bb353c;
+}
+html section.model.tc-fri > div > div,
+body section.model.tc-fri > div > div {
+  box-sizing: border-box;
+  padding-top: .1rem;
+  width: 5.68rem;
+  height: 6.4rem;
+  border-radius: .2rem;
+  background-color: #e3555c;
+}
+html section.model.tc-fri > div > div p,
+body section.model.tc-fri > div > div p {
+  font-size: .3rem;
+  text-align: center;
+  line-height: 1.8em;
+  color: #000000;
+}
+html section.model.tc-fri > div > div p:nth-child(1),
+body section.model.tc-fri > div > div p:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+html section.model.tc-fri > div > div p:nth-child(1) span,
+body section.model.tc-fri > div > div p:nth-child(1) span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 8em;
+}
+html section.model.tc-fri > div > div p:nth-child(2) span,
+body section.model.tc-fri > div > div p:nth-child(2) span {
+  font-size: .38rem;
+  font-weight: bold;
+  color: #e7ea06;
+}
+html section.model.tc-fri > div > div p:nth-child(5),
+body section.model.tc-fri > div > div p:nth-child(5) {
+  color: #e7ea06;
+}
+html section.model.tc-fri > div > div > div,
+body section.model.tc-fri > div > div > div {
+  box-sizing: border-box;
+  margin: .2rem auto 0;
+  padding: .13rem;
+  width: 5.34rem;
+  height: 3.07rem;
+  background: url(../images/tc_card.png) center no-repeat;
+  background-size: cover;
+}
+html section.model.tc-fri > div > div > div div,
+body section.model.tc-fri > div > div > div div {
+  position: relative;
+  overflow: hidden;
+  width: 5.08rem;
+  height: 2.81rem;
+  border-radius: .2rem;
+}
+html section.model.tc-fri > div > div > div div img,
+body section.model.tc-fri > div > div > div div img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5.08rem;
+  height: auto;
+}
+html section.model.tc-fri > a,
+body section.model.tc-fri > a {
+  margin: .62rem auto 0;
+  display: block;
+  width: 3.13rem;
+  height: 1.11rem;
+  background: url(../images/btn_cjhd.png) center no-repeat;
+  background-size: cover;
+}
+html section.mask,
+body section.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 800;
+}
+@-webkit-keyframes scaleDraw {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes scaleDraw {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes toRight {
+  0% {
+    -webkit-transform: translateX(-0.25rem);
+  }
+  25% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(0.25rem);
+  }
+  75% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-0.25rem);
+  }
+}
+@keyframes toRight {
+  0% {
+    transform: translateX(-0.25rem);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0.25rem);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-0.25rem);
+  }
+}
+@-webkit-keyframes toTop {
+  0% {
+    -webkit-transform: translateY(-0.25rem);
+  }
+  25% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(0.25rem);
+  }
+  75% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-0.25rem);
+  }
+}
+@keyframes toTop {
+  0% {
+    transform: translateY(-0.25rem);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.25rem);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-0.25rem);
+  }
+}
+@-webkit-keyframes toLeft {
+  0% {
+    -webkit-transform: translateX(1rem) scale(0);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+  }
+}
+@keyframes toLeft {
+  0% {
+    transform: translateX(1rem) scale(0);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
